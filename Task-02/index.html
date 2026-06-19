@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Web Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="stopwatch-container">
+        <!-- Digital Time Display -->
+        <div class="time-display" id="display">00:00:00.00</div>
+        
+        <!-- Control Panel -->
+        <div class="controls">
+            <button id="startBtn" class="btn btn-start">Start</button>
+            <button id="pauseBtn" class="btn btn-pause" disabled>Pause</button>
+            <button id="lapBtn" class="btn btn-lap" disabled>Lap</button>
+            <button id="resetBtn" class="btn btn-reset">Reset</button>
+        </div>
+
+        <!-- Lap Times Container -->
+        <div class="laps-container">
+            <h3>Lap Times</h3>
+            <ul id="lapsList" class="laps-list">
+                <!-- Laps will be injected here dynamically by JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
