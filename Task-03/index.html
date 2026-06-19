@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Web Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+        
+        <!-- Game Modes Selection -->
+        <div class="mode-selection">
+            <button id="btnPvP" class="mode-btn active">Player vs Player</button>
+            <button id="btnPvE" class="mode-btn">Player vs AI (Unbeatable)</button>
+        </div>
+
+        <!-- Status Indicator -->
+        <div class="status-indicator" id="statusIndicator">Player X's Turn</div>
+        
+        <!-- Tic-Tac-Toe Board -->
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <!-- Controls -->
+        <button id="restartBtn" class="restart-btn">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
